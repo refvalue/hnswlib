@@ -113,7 +113,7 @@ static bool AVX512Capable() {
 #include <string.h>
 
 namespace hnswlib {
-typedef size_t labeltype;
+typedef std::uint64_t labeltype;
 
 // This can be extended to store state for filtering (e.g. from a std::set)
 class BaseFilterFunctor {
